@@ -18,7 +18,7 @@ load("//build:platforms.bzl", "for_platforms")
 
 filegroup(
     name = "_binary-artifacts-and-hashes",
-    srcs = select(for_platforms(
+    src = select(for_platforms(
         for_client = ["//build:client-targets-and-hashes"],
         for_node = [
             "//build:node-targets-and-hashes",
